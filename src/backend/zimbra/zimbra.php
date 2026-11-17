@@ -4359,7 +4359,7 @@ ZLog::Write(LOGLEVEL_DEBUG, 'Zimbra->ChangeFolder(): ' .  'OldID is set - Want t
         $rtftruncation = $contentparameters->GetRTFTruncation();
         $mimesupport = $contentparameters->GetMimeSupport();
         $mimetruncation = $contentparameters->GetMimeTruncation();
-        $bodyPrefKeys = $contentparameters->GetBodyPreference();
+        $bodyPrefKeys = $contentparameters->GetBodyPreference() ?: [];
         //ZLog::Write(LOGLEVEL_DEBUG, 'Zimbra->GetMessage(): ' .  'Body Preferences ['.print_r( $bodyPrefKeys, true ).']' );
 
         if ($bodyPrefKeys) {

@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         nginx \
         php8.2-fpm \
         php8.2-curl \
+        php8.2-intl \
         php8.2-mbstring \
         php8.2-xml \
         rpl \
